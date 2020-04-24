@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../font/Nunito-Regular.ttf');
+  src: url('../font/Nunito-Regular.ttf') format('ttf'),
+    url('../font/Nunito-Regular.ttf') format('truetype');
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+a:focus {
+    outline: none;
+}
+
+/*--------nav------------*/
+
+.topbar {
+    height: 4.375rem;
+    z-index: 2;
+    -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.topbar .topbar-divider {
+    width: 0;
+    border-right: 1px solid #e3e6f0;
+    height: calc(4.375rem - 2rem);
+    margin: auto 1rem;
+}
+
+
+@media (min-width: 576px) {
+    .topbar .dropdown {
+        position: relative;
+  }
+
+  .topbar .dropdown .dropdown-menu {
+      width: auto;
+      right: 0;
+  }
+
+  .topbar .dropdown-list {
+      width: 20rem !important;
+  }
+
+  .topbar .dropdown-list .dropdown-item .text-truncate {
+      max-width: 13.375rem;
+  }
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #fafafa;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #e0e0e0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:active {
+    color: #858796;
+}
+
+.bg-navbar, #btn_calc{
+    background-color: #6777EF;
+}
+.text-primary{
+    color:#6777EF;
+}
+/*--------nav_end------------*/
+
+
+.example-2 .input-file{
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1
+}
+
+/*--------footer------------*/
+footer.sticky-footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+    -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    width: 100%;
+}
+
+footer.sticky-footer .copyright {
+    line-height: 1;
+    font-size: 0.8rem;
+}
+
+footer.sticky-footer .copyright a {
+    color: #455a64;
+}
+
+footer.sticky-footer .copyright a:hover {
+    text-decoration: none;
+}
+/*--------footer_end------------*/
+
+#p_table {
+    text-align: center;
+}
+
+.alert{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+
+}
