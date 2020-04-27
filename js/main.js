@@ -7,11 +7,13 @@ let my_table = document.getElementById('main_table');
 print_row(my_table,StudentList);
 
 window.onload = function () {
+    //обработчик кнопки добавить студента
     let add_bttn = document.getElementById('add_button');
     add_bttn.onclick = function() {
         addStudent(my_table,StudentList);
     };
 
+    //обработчик кнопки сохранить в файл
     let save_bttn = document.getElementById('save_button');
     save_bttn.onclick = function() {
        exportTableToCSV('students.csv',StudentList);

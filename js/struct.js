@@ -8,6 +8,7 @@ function makeStudent(fio, group, sex, birthday, city) {
         city: city
   };
 }
+
 //Класс описывающий элемент связного списка
 class Node {
     constructor(data, next=null) {
